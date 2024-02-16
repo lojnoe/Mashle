@@ -1,25 +1,22 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
+
 
 <template>
   <div id="app">
-    <h1 @click="animate">¡Bienvenido a mi página con GSAP y Vue.js!</h1>
+    <personajes />
   </div>
 </template>
 
-<script>
-import { gsap } from "gsap";
+<script setup>
+import personajes from './components/personajes.vue';
 
-export default {
-  methods: {
-    animate() {
-      gsap.to("h1", { duration: 1, rotation: 360, scale: 1.5, opacity: 0.5 });
-    },
-  },
-};
+import { gsap } from "gsap";
+document.addEventListener('DOMContentLoaded', function() {
+    // Tu código aquí se ejecutará después de que se cargue el DOM
+    console.log('El DOM ha sido cargado completamente.');
+    // Puedes iniciar GSAP aquí u ejecutar cualquier otra lógica que dependa del DOM
+});
 </script>
+
 <style scoped>
 header {
   line-height: 1.5;

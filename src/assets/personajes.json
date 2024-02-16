@@ -1,0 +1,64 @@
+[
+    {
+      "id": 1,
+      "nombre": "Mash Burnedead",
+      "descripcion": "A rare young man who cannot use magic. Although he crushes all types of magic with his well-trained muscles, he lacks common sense and tends to do as he pleases. He loves cream puffs",
+      "imagenPrincipal": "https://mashleanime.com/teaser/img/character/c01_main.png",
+      "imagenSecundaria": "https://mashleanime.com/teaser/img/character/c01_sub.png",
+      "birthday": "November 11th",
+      "height": "171 cm",
+      "footSize": "26.5 cm",
+      "weakPoint": "Weak Point: Opening and closing doors",
+      "marco": "https://mashleanime.com/teaser/img/character/nav_c01.png"
+
+    },
+    {
+      "id": 2,
+      "nombre": "Finn Ames",
+      "descripcion": "Mash's dorm roommate. He is the straight man (tsukkomi) of their antics and Mash's first friend.",
+      "imagenPrincipal": "https://mashleanime.com/teaser/img/character/c02_main.png",
+      "imagenSecundaria": "https://mashleanime.com/teaser/img/character/c02_sub.png",
+      "birthday": "January 23rd",
+      "height": "170 cm",
+      "footSize": "26 cm",
+      "weakPoint": "Favorite Word: Peace and Order (or Law and Order)",
+      "marco": "https://mashleanime.com/teaser/img/character/nav_c02.png"
+    },
+    {
+      "id": 3,
+      "nombre": "Lance Crown",
+      "descripcion": "A good-looking young man who ranked first among the transfer exam students. He has considerable magical power, and is top of the class in academic performance. ",
+      "imagenPrincipal": "https://mashleanime.com/teaser/img/character/c03_main.png",
+      "imagenSecundaria": "https://mashleanime.com/teaser/img/character/c03_sub.png",
+      "birthday": "February 3rd",
+      "height": "178 cm",
+      "footSize": "28 cm",
+      "weakPoint": "How to spend a weekend: Cleaning up his room ",
+      "marco": "https://mashleanime.com/teaser/img/character/nav_c03.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Dot Barrett",
+        "descripcion": "An impulsive and noisy young man. He's the unpopular type with a strong hatred for good-looking guys. ",
+        "imagenPrincipal": "https://mashleanime.com/teaser/img/character/c04_main.png",
+        "imagenSecundaria": "https://mashleanime.com/teaser/img/character/c04_sub.png",
+        "birthday": "April 1st",
+        "height": "178 cm",
+        "footSize": "28 cm",
+        "weakPoint": "His type: Any girl he likes is his type ",
+        "marco": "https://mashleanime.com/teaser/img/character/nav_c04.png"
+      },
+      {
+        "id": 5,
+        "nombre": "Lemon Irvine",
+        "descripcion": "Has had a crush on Mash since he helped her during the transfer exams. She's imaginative to say the least. ",
+        "imagenPrincipal": "https://mashleanime.com/teaser/img/character/c05_main.png",
+        "imagenSecundaria": "https://mashleanime.com/teaser/img/character/c05_sub.png",
+        "birthday": "July 7th",
+        "height": "162cm",
+        "footSize": "23 cm",
+        "weakPoint": "Future dream: Mash's wife",
+        "marco": "https://mashleanime.com/teaser/img/character/nav_c05.png"
+      }
+  ]
+  
