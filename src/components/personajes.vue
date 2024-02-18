@@ -1,5 +1,8 @@
 <template>
+  <img src="https://mashleanime.com/teaser/img/character/character_headline.png" class="fotocomponente" alt="">
   <div class="container">
+    
+
     <!-- Lista de personajes -->
     <div class="marcopersonajes" v-for="personaje in personajes" :key="personaje.id"
       @click="mostrarInformacion(personaje)">
@@ -88,7 +91,13 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <style scoped>
-
+p{
+  font-family: saber;
+}
+.fotocomponente {
+  width: 200px;
+  height: auto;
+}
 .letramarco{
   text-align: center;
   font-size: 20px;

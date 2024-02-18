@@ -1,13 +1,15 @@
 <template>
   <div>
-    <h1>Episodes</h1>
+    <img src="https://mashleanime.com/teaser/img/episode/episode_headline.png" class="fotocomponente" alt="">
     <ul>
+        <h2>Temporada 1</h2>
       <li v-for="episode in episodes" :key="episode.id">
-        <span v-if="episode.watched">{{ episode.title }}</span>
-        <span v-else>{{ episode.title }} (Not Watched)</span>
+        <span v-if="episode.watched">{{ episode.title }} (Visto) </span>
+        <span v-else>{{ episode.title }} (No Visto)</span>
         <input type="checkbox" v-model="episode.watched" v-on:change="updateWatchedStatus(episode)">
       </li>
     </ul>
+    
   </div>
 </template>
 
@@ -41,5 +43,8 @@ export default {
 </script>
 
 <style scoped>
-/* Add your component-specific styles here */
+.fotocomponente {
+  width: 200px;
+  height: auto;
+}
 </style>
