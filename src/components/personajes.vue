@@ -3,8 +3,8 @@
     <!-- Lista de personajes -->
     <div class="marcopersonajes" v-for="personaje in personajes" :key="personaje.id"
       @click="mostrarInformacion(personaje)">
-      <img :src= personaje.marco alt="" class="fotos">
-      <p>{{personaje.nombre}}</p>
+      <img v-bind:src= personaje.marco alt="" class="fotos">
+      <p class= "letramarco">{{personaje.nombre}}</p>
     </div>
 
     <!-- Div central con información -->
@@ -20,7 +20,7 @@
           </picture>
         </p>
       <div ref="info3" v-if="mostrarInfo3">
-        <h3 ref="info2"  v-if="mostrarInfo2">{{ personajeSeleccionado.nombre }}</h3>  
+        <h3 ref="info2"  v-if="mostrarInfo2" class="letra">{{ personajeSeleccionado.nombre }}</h3>  
         <p>
           {{ personajeSeleccionado.descripcion }}
         </p>
@@ -55,7 +55,7 @@ export default {
     const elements = document.querySelectorAll('.marcopersonajes');
     elements.forEach(el => {
       el.addEventListener('mouseenter', () => {
-        gsap.to(el, { rotation: 20, duration: 0.5 });
+        gsap.to(el, { rotation: 15, duration: 0.5 });
       });
       el.addEventListener('mouseleave', () => {
         gsap.to(el, { rotation: 0, duration: 0.5 });
@@ -89,16 +89,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <style scoped>
 
+.letramarco{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+
+}
 .container {
   display: flex;
   flex-wrap:nowrap;
 }
-.fotos{
-  
-}
+
+
 .marcopersonajes {
   cursor: pointer;
   margin: 10px;
+  
   
 }
 .marcopersonajes::hover {
@@ -106,6 +112,11 @@ document.addEventListener('DOMContentLoaded', function () {
   transition: transform 0.5s;
 }
 
+.fotos{
+  width: 190px;
+  height: 220px;
+  ; 
+}
 .info {
   
   display: flex; 
@@ -113,30 +124,5 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 
 
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>

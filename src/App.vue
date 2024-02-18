@@ -2,13 +2,20 @@
 
 <template>
   <div id="app">
-    <personajes />
-  </div>
+    
+    <section class="main">
+      <personajes />
+      <episodios />
+    </section>
+    
+  </div>  
 </template>
+
 
 <script setup>
 import personajes from './components/personajes.vue';
 
+import episodios from './components/episodios.vue';
 import { gsap } from "gsap";
 document.addEventListener('DOMContentLoaded', function() {
     // Tu código aquí se ejecutará después de que se cargue el DOM
@@ -18,30 +25,5 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
